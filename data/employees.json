@@ -14,16 +14,16 @@
     "id": 2
   },
   "3": {
-    "name": "Larry lemon",
+    "name": "Larry Lemon",
     "employeeId": "E0003",
-    "role": "Senior Software Engineer",
+    "role": "Junior Software Engineer",
     "department": "IT",
     "id": 3
   },
   "4": {
     "name": "Vivian Yu",
     "employeeId": "E0004",
-    "role": "Accountant",
+    "role": "Senior Accountant",
     "department": "Finance",
     "id": 4
   }
