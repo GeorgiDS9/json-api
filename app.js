@@ -5,10 +5,11 @@ const bodyParser = require('body-parser');
 // create an instance of express to serve the end points
 const app = express();
 
-// require the built-in file system library to serve the JSON file
+// require the node.js built-in file system library to serve the JSON file
 const fs = require('fs');
 
-// configure our express instance with some body-parser settings
-// including handling JSON data
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// body-parser is deprecated, so I used express to handle the JSON data
+//  Note: Express >= 4.16.0, body parser has been re-added under the methods express.json() and express.urlencoded()
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
