@@ -8,6 +8,9 @@ const app = express();
 // Require the node.js built-in file system library to serve the JSON file
 const fs = require('fs');
 
+// Create the path to the local json file where we fetch the data with the GET method further below
+const dataPath = './data/employees.json';
+
 // Body-parser is deprecated, so I used express to handle the JSON data
 //  Note: Express >= 4.16.0, body parser has been re-added under the methods express.json() and express.urlencoded()
 app.use(express.json());
@@ -15,7 +18,10 @@ app.use(express.urlencoded({ extended: true }));
 
 // Create the routes
 
-const dataPath = './data/employees.json';
+//  Home Route
+app.get('/', (req, res) => {
+  res.send('<h1 style="color: blue">Welcome to my App!</h1>');
+});
 
 // GET/Read Data from the JSON file I created
 
