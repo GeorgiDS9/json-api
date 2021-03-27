@@ -1,6 +1,7 @@
 Create a simple Node JSON API server locally, that fetches (gets) data from a local employees.json file, for simplicity purposes.
 More complexity could have been added using ejs (for templating and creating various routes) and mongoDB (mongoose) for fetching data from a database. Also, data could have been fetched from an API like GitHub, OpenWeather, etc.
 STEPS for creating the app:
+* use the code editor of your choice
 * install node.js (https://nodejs.org/en/)
 * create project folder, cd into it and npm init. This generates package.json file by default.
 * npm install express and nodemon (to help us restart our server for us); add "start": "nodemon server.js" under "scripts" in the package.json file
