@@ -11,6 +11,8 @@ STEPS for creating the app:
 - create the instance of express to handle the json data coming from our local employees.json file (or a database),
 - and launch the server (listening on a port of our choice, 3000 in this case)
 * create a data file: employees.json that holds the data (in json format) that we want to parse.
-* create route and use the GET method to fetch data from the local file
-I recommend you install the JSON Viewer Pro extension for Google Chrome to have a prettified view of the JSON data displayed in the browser.
+* create the routes and use the GET method to fetch data from the local json file
+I recommend you install the JSON Viewer Pro extension for Google Chrome to have a prettified view of the JSON data displayed in the browser (localhost:3000/employees). Check out the routes:
+localhost:3000/ 
+localhost:3000/employees
 Thanks for reading!
